@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!--Title-->
+  <title>PLS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico">
+
+  <!--google font links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!--Font Awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Footer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--Home page image style-->
+  <style>
+    .head {
+      min-height: 100vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/bg2.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Header section-->
+  <section class="head">
+    <nav class="nv">
+      <div class="max-width" style="
+      margin-left: 0px;
+      padding-left: 20px;">
+        <div class="logo1">
+          <img src="images/logo-modified.png" alt="logo" height="70px" width="70px">
+        </div>
+        <div class="diff">
+          <!-- <i class="fas fa-times"></i> -->
+          <ul class="home">
+            <li class="link"><a class="a1" style="margin-left: 0px;" href="index.html">HOME</a></li>
+            <li class="link"><a class="a1" style="margin-left: 0px;" href="about.html">ABOUT</a></li>
+            <li class="link"><a class="a1" style="margin-left: 0px;" href="feature.html">OUR PROGRAM</a></li>
+            <li class="link"><a class="a1" style="margin-left: 0px;" href="contact.html">CONTACT</a></li>
+          </ul>
+      </div>
+    </nav>
+    <div class="text-box">
+      <form class="search-btn form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <h1> Window For Mom </h1>
+      <p>A tool that allows you to self analyze your current pregnancy health status, anticipate any <br>future risks
+        and find verified recommendations & Service solutions</p>
+      <button class="hero-btn" data-toggle="modal" data-target="#loginModal">Login</button>
+      <button class="hero-btn" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+    </div>
+  </section>
+
+<!--Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to icoder</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Get an icoder Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Informarion -->
+  <section class="cancerswetreat">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="title-section style3 left">
+            <h1 class="title">Disease We Treat</h1>
+          </div>
+        </div>
+
+        <div style="clear: both;"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 mt-3 mb-3">
+              <div class="treatment-section" style="border: 1px solid #e1e1e1;">
+                <div class="treatment-name">
+                  <img src="images/bone.png">
+                  <h3>
+                    Bone &amp; Soft<br>
+                    Tissue 
+                  </h3>
+                </div>
+                <hr>
+
+                <a class="button-text no-style1 entry-border" href="https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/bone-fractures"><img
+                    src="images/bone-cancer.png" alt=""> Know More &nbsp;<span style="font-size: 17px;">➜</span></a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-3 mb-3">
+              <div class="treatment-section" style="border: 1px solid #e1e1e1;">
+                <div class="treatment-name">
+                  <img src="images/breast.png">
+                  <h3>
+                    Breast<br>
+                  </h3>
+                </div>
+                <hr>
+
+                <a class="button-text no-style1 entry-border" href="https://www.fortishealthcare.com/india/clinical-speciality/breast-surgery-579"><img
+                    src="images/breast-cancer.png" alt=""> Know More &nbsp;<span style="font-size: 17px;">➜</span></a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-3 mb-3">
+              <div class="treatment-section" style="border: 1px solid #e1e1e1;">
+                <div class="treatment-name">
+                  <img src="images/intestine.png">
+                  <h3>
+                    Gastrointestinal<br>
+                  </h3>
+                </div>
+                <hr>
+
+                <a class="button-text no-style1 entry-border" href="https://www.medexpress.com/services-and-treatment/gastrointestinal-illnesses.html"><img
+                    src="images/stomach-cancer.png" alt=""> Know More &nbsp;<span style="font-size: 17px;">➜</span></a>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-6 mt-3 mb-3">
+              <div class="treatment-section" style="border: 1px solid #e1e1e1;">
+                <div class="treatment-name">
+                  <img src="images/gynaecological.png">
+                  <h3>
+                    Gynaecological <br>
+                   
+                  </h3>
+                </div>
+                <hr>
+
+                <a class="button-text no-style1 entry-border" href="https://teachmeobgyn.com/gynaecology/"><img
+                    src="images/ovarian-cancer.png" alt=""> Know More &nbsp;<span style="font-size: 17px;">➜</span></a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-3 mb-3">
+              <div class="treatment-section" style="border: 1px solid #e1e1e1;">
+                <div class="treatment-name">
+                  <img src="images/head-neck.png">
+                  <h3>
+                    Head &amp; Neck <br>
+                  </h3>
+                </div>
+                <hr>
+
+                <a class="button-text no-style1 entry-border" href="https://pilesclinicmumbai.in/seo/index.html?gclid=Cj0KCQjwqp-LBhDQARIsAO0a6aJ8PLBHMU4eylFMnEcBsNzAT1paC1T2OWLHkAqw2UIC2FL5pYh8UQgaAuNeEALw_wcB"><img
+                    src="images/head-neck-cancer.png" alt=""> Know More &nbsp;<span
+                    style="font-size: 17px;">➜</span></a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-3 mb-3">
+              <div class="treatment-section" style="border: 1px solid #e1e1e1;">
+                <div class="treatment-name">
+                  <img src="images/Neuro.png">
+                  <h3>
+                    Neuro <br>
+                  </h3>
+                </div>
+                <hr>
+
+                <a class="button-text no-style1 entry-border" href="https://www.healthline.com/find-care/articles/neurologists/neurologist"><img src="images/brain-cancer.png"
+                    alt=""> Know More &nbsp;<span style="font-size: 17px;">➜</span></a>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-6 mt-3 mb-3">
+              <div class="treatment-section" style="border: 1px solid #e1e1e1;">
+                <div class="treatment-name">
+                  <img src="images/paediatric.png">
+                  <h3>
+                    Paediatric<br>
+                  </h3>
+                </div>
+                <hr>
+
+                <a class="button-text no-style1 entry-border" href="https://www.iconplc.com/therapeutics/paediatrics/"><img
+                    src="images/childhood-cancer.png" alt=""> Know More &nbsp;<span
+                    style="font-size: 17px;">➜</span></a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-3 mb-3">
+              <div class="treatment-section" style="border: 1px solid #e1e1e1;">
+                <div class="treatment-name">
+                  <img src="images/Thoracic.png">
+                  <h3>
+                    Thoracic<br>
+                  </h3>
+                </div>
+                <hr>
+
+                <a class="button-text no-style1 entry-border" href="https://www.cancercenter.com/treatment-options/surgery/thoracic-surgery#:~:text=Thoracic%20surgery%20refers%20to%20operations,the%20lung%20affected%20by%20cancer."><img
+                    src="images/lung-cancer.png" alt=""> Know More &nbsp;<span style="font-size: 17px;">➜</span></a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-3 mb-3">
+              <div class="treatment-section" style="border: 1px solid #e1e1e1;">
+                <div class="treatment-name">
+                  <img src="images/Uro.png">
+                  <h3>
+                    Uro <br>
+                  </h3>
+                </div>
+                <hr>
+
+                <a class="button-text no-style1 entry-border" href="https://www.healthline.com/health/pregnancy/treat-a-uti"><img
+                    src="images/prostate-cancer.png" alt=""> Know More &nbsp;<span style="font-size: 17px;">➜</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--carousel-->
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slide1.jpg" class="d-block w-100" width="1400" height="600" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="slideh2">Welcome to Patient Life Spark</h2>
+            <p class="Paragraph">"Free virtual care assistant for women and child"</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide2.jpg" class="d-block w-100" height="600" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="slideh2">Welcome to Patient Life Spark</h2>
+            <p class="Paragraph">"Celebrate year of Empowering Mothers and Enabiling Healthy Children"</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide3.jpg" class="d-block w-100" height="600" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="slideh2">Welcome to Patient Life Spark</h2>
+            <p class="Paragraph">"Pregnancy is not a disease. Childhood is not an ailment.
+              Dying due to a natural life event is not acceptable"</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide4.jpg" class="d-block w-100" height="600" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="slideh2">Welcome to Patient Life Spark</h2>
+            <p class="Paragraph">"Hundreds of dewdrops to greet the dawn … Hundreds of bees in the purple cover…
+              Hundreds of butterflies
+              on the lawn .. But only one Mother the world wide over…"</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Team member -->
+  <section id="Team" class="team">
+    <div class="row">
+      <div class="col-lg-3">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/Pooja.jpg" alt="poojaimg">
+        <h2 class="teamname">Pooja Taklikar</h2>
+        <p>Project Manager</p>
+        <p><a class="btn btn-outline-success" href="https://in.linkedin.com/in/pooja-taklikar-a0a5b81b5">View details »</a>
+        </p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/Snehal.jpg" alt="snehalimg">
+
+        <h2 class="teamname">Snehal Dhewle</h2>
+        <p>Project Architect</p>
+        <p><a class="btn btn-outline-success" href="https://www.linkedin.com/in/snehal-dhewle-8032021b5/">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/Pranjali.jpg" alt="pranjaliimg">
+
+        <h2 class="teamname">Pranjali Bawankar</h2>
+        <p>UI/UX Designer</p>
+        <p><a class="btn btn-outline-success" href="https://www.linkedin.com/in/pranjali-bawankar-81a0a91ba">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/lekha.jpg" alt="lekhaimg">
+        <h2 class="teamname">Lekha Bhoyer</h2>
+        <p>UI/UX Designer</p>
+        <p><a class="btn btn-outline-success" href="https://www.linkedin.com/in/lekha-bhoyar-5860b0215">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div>
+
+  </section>
+
+
+  <!--Footer  -->
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="featues.html">Features</a></li>
+                        <li><a href="appintment.html">Appointment</a></li>
+                        <li><a href="appointment.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="about.html">Company</a></li>
+                        <li><a href="#Team">Team</a></li>
+                        <li><a href="privacy.html">Privacy&Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>PLS</h3>
+                    <p>Our Website name itselt reflect that Pulse means heart beat. Our goal is to make our country disease free. PLS is Patient Life Spark that mean we want to give spark to Patient Life. </p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/pls12344/"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Pls © 2021</p>
+        </div>
+    </footer>
+</div>
+    
+  <!--javascript-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- NavBar javaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+
+  <!-- Javascript for footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

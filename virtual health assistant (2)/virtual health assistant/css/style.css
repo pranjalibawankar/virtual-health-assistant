@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Front page Css */
+#nv{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color:bisque;
+}
+.home{
+    flex:1;
+    text-align: right;
+}
+.logo
+{
+  width: 100px;
+}
+.link{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative;
+}
+.a1{
+    color:#fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.diff ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.link :hover::after{
+    width:100%;
+    text-underline-position: auto;
+} 
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p
+{
+   margin: 10px 0 40px;
+   font-size: 14px;
+   color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover
+{
+  border: azure;
+  background: rgb(33, 241, 224);
+  color: black;
+  transition: 1s;
+}
+svg.svg-inline--fa.fa-times.fa-w-12 {
+    display: none;
+}
+svg.svg-inline--fa.fa-bars.fa-w-14 {
+    display: none;
+}
+#carouselExampleCaptions{
+  z-index: -1;
+}
+.carousel-fade .carousel-item.active {
+  z-index: -1;
+  opacity: 1;}
+
+/* nv CSS */
+.nv {
+    overflow: hidden;
+    position: fixed;
+    padding: 30px 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  
+  .nv .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nv.sticky {
+    padding: 15px 0;
+    padding-bottom: 0px;
+    background-color:rgb(0, 0, 0);
+  }
+  
+  .max-width {
+    max-width: 1000px;
+    padding: 0 80px;
+    margin-left: 50px;
+    margin: auto;
+    height: 60px
+
+  }
+  
+  .nv .logo a {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  .nv .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+  } 
+
+  .nv .home li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+  }
+  
+  .nv .home li a:hover {
+    color:white
+  }
+
+  a:hover {
+    text-decoration: none;
+}
+  
+  .nv.sticky .home li a {
+    color: white;
+  }
+  
+  .nv.sticky .home li a:hover {
+     color: white;
+  }
+  .nv .home li a:hover {
+    text-decoration: none;
+}
+  .nv .home li {
+    list-style: none;
+    display: inline-block;
+    color: white;
+  }
+ /* home bar styling */
+
+.home-btn {
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+/* Slider css */
+.Paragraph
+{
+  color: whitesmoke;
+  font-weight: bolder;
+}
+.slideh2
+{
+  color: rgb(255, 255, 240);
+}
+/* for image hidden under navbar */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transform: none;
+  z-index: -1;
+}
+
+  /* Footer CSS */
+  .footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  
+  /* https://epicbootstrap.com/snippets/footer-dark */
+  /* team */
+  .team{
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 70px;
+    border-bottom-width: 70px;
+  }
+
+  /* search bar */
+ 
+  .search-btn
+  {
+    padding-inline: 36%;
+  }
+  
+.teamname
+{
+  font-size: 1.5rem;
+}
